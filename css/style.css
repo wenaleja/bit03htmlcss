@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 1024px;
+    margin: 10px auto;
+    background-color: white;
+    border: 2px solid lightgrey;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 255px 255px 255px 255px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'header header header header'
+    'nav nav nav nav'
+    'main main main aside'
+    'footer footer footer footer'
+    ;
+}
+
+header {
+    grid-area: header;
+    background-color: #325BA7;
+    color: white;
+    width: 1020px;
+    line-height: 50px;
+    border-radius: 16px;
+}
+
+.img-arriba {
+    vertical-align: text-top;
+    width: 80px;
+    margin-left: 20px;
+    margin-top: 35px;
+    float: left;
+}
+
+.title1{
+    width: 1020;
+    float: left;
+    vertical-align: text-top;
+    margin-left: 40px;
+    margin-top: 30px;
+    font-size: 45px;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+.parrafo{
+    float: left;
+    vertical-align: auto;
+    margin-right: 50px;
+    margin-left: -352px;
+    margin-top: 50px;
+    font-family: 'Crimson Text', serif;
+}
+
+nav {
+    grid-area: nav;
+    
+}
+
+.menu {
+    font-family: 'Noto Sans SC', sans-serif;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 1020px;
+    margin: auto;
+    background-color: #3CCF4E;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a:hover {
+    background: #325BA7;
+}
+
+main{
+    grid-area: main;
+    border-radius: 16px;
+}
+
+.img-bo {
+    width: 765px;
+    height: 220px;
+    margin-top: 0%;
+    border-radius: 16px;
+}
+
+.title2 {
+    text-align: center;
+    font-family: 'Noto Sans SC', sans-serif;
+    color: #325BA7;
+    text-decoration: underline;
+    font-size: 28px;
+}
+
+.p-botero {
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+    font-size: 16px;
+}
+
+.bo2 {
+    vertical-align: text-top;
+    float: left;
+    margin-left: 120px;
+    margin-top: 10px;
+}
+
+.bo3 {
+    vertical-align: text-top;
+    float: none;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.bo4 {
+    vertical-align: text-top;
+    float: left;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.p-casa,
+.p-pablo,
+.p-familia
+{
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 10px;
+    text-align: center;
+}
+
+.p-casa {
+    margin-left: -400px;
+}
+
+.p-pablo {
+    margin-left: 50px;
+    margin-top: -40px;
+}
+
+.p-familia {
+    margin-left: 490px;
+    margin-top: -40px;
+}
+
+.caja {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);   
+}
+
+.btn-obra {
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-family: 'Noto Sans SC', sans-serif;
+    text-decoration: none;
+    border: 2px solid #3CCF4E;
+    padding: 8px 8px; 
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+    margin-top: 505px;
+    margin-left: -205px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btn-obra::before {
+    background-color: #3CCF4E;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    z-index: -1;
+    transition: all 0.6s ease; 
+}
+
+.btn-obra::before {
+    width: 100%;
+    height: 0;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.btn-obra:hover::before {
+    height: 400%;
+}
+
+
+.div {
+    width: 765px;
+    background-color: rgba(211, 211, 211, 0.653);
+    border-radius: 16px;
+    margin-top: 85px;
+}
+
+.botero {
+    margin-left: 5px;
+    width: 350px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.p-info {
+    font-size: 16px;
+    font-family: 'Crimson Text', serif;
+    margin-left: 370px;
+    margin-top: -290px;
+    text-align: left;
+}
+
+
+
+.title3 {
+    text-align: center;
+    font-family: 'Noto Sans SC', sans-serif;
+    color: #325BA7;
+    text-decoration: underline;
+    font-size: 28px;
+}
+
+.p-entrevista {
+    text-align: left;
+    font-family: 'Crimson Text', serif;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.video {
+    margin-left: 250px;
+}
+
+aside {
+    grid-area: aside;
+    height: 340px;
+}
+
+.title4 {
+    text-align: center;
+    font-family: 'Noto Sans SC', sans-serif;
+    color: #3CCF4E;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.uno,
+.dos,
+.tres,
+.cuatro,
+.cinco,
+.seis,
+.siete,
+.ocho,
+.nueve,
+.diez,
+.once,
+.doce {
+    font-family: 'Crimson Text', serif;
+    font-size: 16px;
+    margin-left: 10px;
+    background-color: #325BA7;
+    border-radius: 3px;
+    color: white;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.contenedor .form .form-header .form-title {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: normal;
+    color: #3CCF4E;
+    text-align: center;
+    padding: 14px 0;
+    border-radius: 3px;
+}
+
+.contenedor .form .form-header .form-title span {
+    color:white;
+}
+
+.contenedor .form {
+    background: #325BA7;
+    width: 100%;
+    max-width: 1220px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+}
+
+.contenedor .form .form-label {
+    display: block;
+    color: #3CCF4E;
+    font-size: 16px;
+    font-family: 'Noto Sans SC', sans-serif;
+    position: relative;
+}
+
+.contenedor .form .form-input, .form-textarea {
+    background: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #3CCF4E;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: white;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+.contenedor .form .form-textarea {
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+
+.contenedor .form .btn-submit {
+    width: 100%;
+    font-family: 'Noto Sans SC', sans-serif;
+    outline: none;
+    background: #3CCF4E;
+    font-size: 16px;
+    border: none;
+    color: white;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: all 5s ease;
+}
+
+.contenedor .form .btn-submit:hover {
+    background: rgba(0,0,0,.7);
+}
+
+.p-footer {
+    background-color: #3CCF4E;
+    text-align: center;
+    color: white;
+}
