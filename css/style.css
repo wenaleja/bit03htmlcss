@@ -291,7 +291,6 @@ footer {
     color: #3CCF4E;
     text-align: center;
     padding: 14px 0;
-    border-radius: 3px;
 }
 
 .contenedor .form .form-header .form-title span {
@@ -357,5 +356,4 @@ footer {
 .p-footer {
     background-color: #3CCF4E;
     text-align: center;
-    color: white;
 }
